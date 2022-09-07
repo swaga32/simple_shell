@@ -25,7 +25,8 @@ int main(void)
 	{
 		printf("$ ");
 		read = getline(&buffer, &len, stdin);
-		/*if (read != EOF)																	 * 		*	buffer = argv[ac++];*/
+		/*if (read != EOF)
+			*	buffer = argv[ac++];*/
 		child_pid = fork();
 
 		if (child_pid == -1)
