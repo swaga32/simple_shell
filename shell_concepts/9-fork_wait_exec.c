@@ -8,6 +8,7 @@
 
 /**
  * main - exercise: fork + wait + execve
+ *
  * Return: Always 0
  */
 int main(void)
@@ -57,14 +58,12 @@ int main(void)
 				/*printf("5th child\n");*/
 				execve(argv[0], argv, NULL);
 				sleep(2);
-
 			}
 			else
 			{
 				wait(&status);
 				sleep(2);
 			}
-
 		}
 
 		else

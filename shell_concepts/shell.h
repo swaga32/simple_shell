@@ -45,5 +45,4 @@ list_t *add_end_node(list_t **head, char *str);
 size_t print_list(list_t *h);
 int delete_nodeint_at_index(list_t **head, int index);
 void free_linked_list(list_t *list);
-
 #endif
